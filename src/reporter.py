@@ -1,4 +1,4 @@
-import os
+from os.path import join, dirname
 import numpy as np
 
 
@@ -48,9 +48,12 @@ class Reporter:
         self.report += f"No. Steps: {len(steps)}\n\n"
 
     def generate_report(self, write_to_file: bool = True):
+        # Generate path to report file.
+        filepath = join(dirname(dirname(__file__)), "reports", "report.txt")
+
         # Write the report to file.
         if write_to_file:
-            with open(os.path.join("reports", "report.txt"), "w") as f:
+            with open(filepath, "w") as f:
                 f.write(self.report)
 
         # Print the report to console.
