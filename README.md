@@ -63,8 +63,8 @@ In the forward step, $\textbf{x}$ is updated based on the $\nabla f(\textbf{x})$
 ```
 
 Where,  
-$k$ is the current iteration
-$\alpha$ is the step size
+* $k$ is the current iteration  
+* $\alpha$ is the step size  
 
 ### Backward Step
 
@@ -76,4 +76,4 @@ In our example, $g(\textbf{x}) = \tau \lVert \textbf{x} \rVert_1$ has the proxim
 ```
 
 Where,  
-$\gamma$ is the proximal parameter
+* $\gamma$ is the proximal parameter  
